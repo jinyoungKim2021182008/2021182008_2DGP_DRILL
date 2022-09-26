@@ -42,6 +42,9 @@ def character_gothit():
     character_animation(6, 0, 6, 1, 400, 70, -15, 0) #got hit
     character_animation(6, 5, 1, 1, 310, 70, 0, 0) #keep down
 
+def character_ladder_climb():
+    character_animation(8, 0, 4, 0, 400, 70, 0, 10)
+
 while True:
     character_idle()
     character_walk()
@@ -49,4 +52,5 @@ while True:
     character_rolling()
     character_attack()
     character_gothit()
+    character_ladder_climb()
 close_canvas()
