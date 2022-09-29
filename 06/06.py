@@ -11,7 +11,6 @@ cir_x = 400
 cir_y = 300
 
 open_canvas()
-os.chdir('d:\kimcode\d06\image')
 grass = load_image('grass.png')
 character = load_image('character.png')
 
