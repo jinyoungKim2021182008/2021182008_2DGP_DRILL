@@ -1,7 +1,6 @@
 # fill here
 import pico2d
 import game_framework
-import logo_state
 import play_state
 
 pico2d.open_canvas()

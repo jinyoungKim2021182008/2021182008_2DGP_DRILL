@@ -1,7 +1,5 @@
 from pico2d import *
 import game_framework
-import logo_state
-import title_state
 import item_state
 import random
 
@@ -18,8 +16,6 @@ class Boy:
         self.frame = 0
         self.dir = 1 # 오른쪽
         self.image = load_image('animation_sheet.png')
-        self.ball_image = load_image('ball21x21.png')
-        self.big_ball_image = load_image('ball41x41.png')
         self.item = None
 
     def update(self):
@@ -57,7 +53,7 @@ def handle_events():
                 game_framework.push_state(item_state)
     delay(0.01)
 
-boys = [] # c로 따지믄 NULL
+boys = []
 grass = None
 running = True
 
